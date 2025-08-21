@@ -5,11 +5,97 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>[insert name] Portifolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
-  <h1> OLA! MY NAME IS NASRULLAH </h1>
+<body class="bg-dark-subtle">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body" data-bs-theme=dark>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Portifolio </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="text-center py-5" >
+    <h1>NASRULLAH ANUAR</h1>
+    <p>FULL STACK DEVELEPOR</p>
+  </header>
+
+  <section id="projects" class="container mt-5 grid text-center">
+    <h2 class="text-center mb-5">Project</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card bg-dark-subtle">
+          <img class="rounded-5" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Tung_tung_tung_sahur_%28cropped%29.webp/250px-Tung_tung_tung_sahur_%28cropped%29.webp.png" alt="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title"> project title</h5>
+            <p class="card-text">project description</p>
+            <a href="project-link" class="btn btn-primary">view project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 ">
+        <div class="card bg-dark-subtle ">
+          <img class="rounded-5 " src="https://data2.nssmag.com/images/galleries/43137/nssgclub-brainrot-01.webp" alt="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title"> project title</h5>
+            <p class="card-text">project description</p>
+            <a href="project-link" class="btn btn-primary">view project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-dark-subtle">
+          <img class="rounded-5" src="https://i.namu.wiki/i/FGrKOrMqLuvt20kKL4ZHrsQzwedUu5oMe_TB7RAyO8PQW6nERJPY5Fidkuyq86FEjI8FgPxdlI2pQCei589sfg.webp" alt="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title"> project title</h5>
+            <p class="card-text">project description</p>
+            <a href="project-link" class="btn btn-primary">view project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container mt-5">
+    <h2 class="text-center mb-5"> Contact</h2>
+    <form action="mb-3">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name :</label>
+        <input type="text" name="form-control" id="name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email :</label>
+        <input type="text" name="form-control" id="email">
+      </div>     
+      <div class="mb-3">
+        <label for="massage" class="form-label">Message :</label>
+        <textarea type="text" name="form-control" id="message" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary mb-3">Submit</button>
+    </form>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2023 NAS.CO, All right reserved.</p>
+  </footer>
+  
   <script src="script.js"></script>
 </body>
 
